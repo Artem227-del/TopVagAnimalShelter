@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.header {
+  background-image: url("../img/Собака Главный экран.png"), url("../img/Ellipse Главный экран.png"),
+    url("../img/Ellipse Шапка.png");
+  height: 725px;
+  background-repeat: no-repeat;
+  background-size: 580px, 690px, 410px;
+  background-position: bottom -37px right 170px, bottom -80px right 15px,
+    top 0px left 470px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  margin-left: 220px;
+  padding-top: 42px;
+}
+
+.navigation a {
+  color: rgb(40, 59, 64);
+  font-size: 34px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  margin-left: 128px;
+}
+
+.header-main h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  color: rgb(40, 59, 64);
+  letter-spacing: 1px;
+}
+
+.header-main {
+  width: 650px;
+  margin-left: 149px;
+  margin-top: 220px;
+}
+
+.header-main button {
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  background-color: rgb(242, 150, 143);
+  padding: 25px 80px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.main {
+  background-image: url("../img/Фон питомцы.png");
+  height: 1700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-image {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.animal-cards {
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  flex-wrap: wrap; /* Позволяет карточкам оборачивать в следующую строку */
+  justify-content: space-between; /* Равномерно распределяет карточки по ширине */
+}
+
+.animal-card {
+  border: 1px solid #ccc;
+  border-radius: 12px; /* Закругленные углы */
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+  text-align: center;
+  background-color: #fff; /* Белый фон */
+  width: calc(33.33% - 30px); /* Ширина карточек (3 карточки в ряд) */
+  box-sizing: border-box; /* Учитывает padding и margin в ширине */
+  transition: transform 0.2s, box-shadow 0.2s; /* Плавный переход при наведении */
+}
+
+.animal-card img {
+  border-radius: 10px; /* Закругленные углы для изображения */
+  max-width: 100%;
+  height: auto;
+}
+
+.animal-info {
+  text-align: left; /* Выравнивание текста влево */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.animal-info h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Убираем отступы */
+}
+
+.animal-info .breed {
+  color: #777; /* Цвет для породы */
+  margin: 5px 0; /* Отступ сверху и снизу */
+}
+
+.animal-info .age {
+  color: #555; /* Цвет для возраста */
+  margin: 5px 0; /* Отступ сверху и снизу */
+}
+
+/* Эффект при наведении */
+.animal-card:hover {
+  transform: translateY(-5px); /* Подъем карточки при наведении */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Более сильная тень при наведении */
+}
+
+/* Стили пагинации */
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(242, 150, 143);
+  color: white;
+  cursor: pointer;
+}
+
+.about-us {
+  background-image: url("../img/Фон о нас.png");
+  height: 1700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Description1 {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.Description1 img {
+  margin-left: 120px;
+}
+
+.text-description1 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 59, 64);
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.text-description1 p {
+  border-radius: 60px;
+  background-color: rgb(222, 193, 233);
+  padding: 20px 30px;
+  font-size: 27px;
+  margin-top: 10px;
+  line-height: 120%;
+}
+
+.text-description1 h3 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.Description2 {
+  display: flex;
+  align-items: center;
+}
+
+.Description2 img {
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.text-description2 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 59, 64);
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.text-description2 p {
+  border-radius: 60px;
+  background-color: rgb(222, 193, 233);
+  padding: 20px 30px;
+  font-size: 27px;
+  margin-top: 10px;
+  line-height: 120%;
+}
+
+.text-description2 h3 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.Description3 {
+  display: flex;
+  align-items: center;
+}
+
+.Description3 img {
+  margin-left: 120px;
+}
+
+.text-description3 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 59, 64);
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.text-description3 p {
+  border-radius: 60px;
+  background-color: rgb(222, 193, 233);
+  padding: 20px 30px;
+  font-size: 27px;
+  margin-top: 10px;
+  line-height: 120%;
+}
+
+.text-description3 h3 {
+  font-size: 38px;
+  margin: 0;
+}

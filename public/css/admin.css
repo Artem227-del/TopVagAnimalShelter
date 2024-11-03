@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f9f9f9; /* Softer background for a clean look */
+    color: #444;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: rgb(40, 59, 64);
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 20px;
+    color: rgb(40, 59, 64);
+    font-size: 30px;
+    border-bottom: 2px solid rgb(242, 150, 143);
+    padding-bottom: 10px;
+    width: fit-content;
+}
+
+/* Animal List Styles */
+#animal-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center the cards */
+    width: 100%;
+    max-width: 1200px; /* Max width for alignment */
+}
+
+#animal-list div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 25px;
+    width: calc(33.33% - 30px); /* Three cards in a row */
+    max-width: 300px; /* Optional max width for cards */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#animal-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+    background-color: rgb(242, 150, 143);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: rgb(210, 120, 120);
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: rgb(242, 150, 143);
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #animal-list div {
+        width: calc(50% - 30px); /* Two cards in a row on smaller screens */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    #animal-list div {
+        width: 100%; /* One card in a row on extra small screens */
+    }
+}

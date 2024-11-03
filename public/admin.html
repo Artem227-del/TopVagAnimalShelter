@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css" />
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Управление Животными</h1>
+    <h2>Добавить новое животное</h2>
+    <form id="add-animal-form">
+        <input type="text" id="name" placeholder="Имя" required>
+        <input type="text" id="breed" placeholder="Порода" required>
+        <input type="text" id="age" placeholder="Возраст" required>
+        <input type="text" id="gender" placeholder="Пол" required>
+        <textarea id="description" placeholder="Описание"></textarea>
+        <input type="text" id="photo_url" placeholder="URL фотографии" required>
+        <button type="submit">Добавить</button>
+    </form>
+    <div id="animal-list"></div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
