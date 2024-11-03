@@ -8,7 +8,7 @@
       "age": 1,
       "gender": "boy",
       "description": "Доброжелательный и игривый пес, любит гулять.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": false,
       "date_added": "2024-10-01T12:00:00Z"
     },
@@ -20,7 +20,7 @@
       "age": 5,
       "gender": "Ж",
       "description": "Спокойная и ласковая кошка, отлично ладит с детьми.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": true,
       "date_added": "2024-09-15T09:30:00Z"
     },
@@ -32,7 +32,7 @@
       "age": 3,
       "gender": "boy",
       "description": "Доброжелательный и игривый пес, любит гулять.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": false,
       "date_added": "2024-10-01T12:00:00Z"
     },
@@ -44,7 +44,7 @@
       "age": 5,
       "gender": "girl",
       "description": "Спокойная и ласковая кошка, отлично ладит с детьми.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": true,
       "date_added": "2024-09-15T09:30:00Z"
     },
@@ -56,7 +56,7 @@
       "age": 3,
       "gender": "boy",
       "description": "Доброжелательный и игривый пес, любит гулять.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": false,
       "date_added": "2024-10-01T12:00:00Z"
     },
@@ -68,7 +68,7 @@
       "age": 5,
       "gender": "girl",
       "description": "Спокойная и ласковая кошка, отлично ладит с детьми.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": true,
       "date_added": "2024-09-15T09:30:00Z"
     },
@@ -80,7 +80,7 @@
       "age": 4,
       "gender": "girl",
       "description": "Энергичная и игривая кошка, любит играть с мячиками.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": false,
       "date_added": "2024-10-10T14:15:00Z"
     },
@@ -92,7 +92,7 @@
       "age": 5,
       "gender": "girl",
       "description": "Спокойная и ласковая кошка, отлично ладит с детьми.",
-      "photo_url": "../../public/img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": true,
       "date_added": "2024-09-15T09:30:00Z"
     },
@@ -104,7 +104,7 @@
       "age": 3,
       "gender": "boy",
       "description": "Доброжелательный и игривый пес, любит гулять.",
-      "photo_url": "../../img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": false,
       "date_added": "2024-10-01T12:00:00Z"
     },
@@ -116,7 +116,7 @@
       "age": 5,
       "gender": "girl",
       "description": "Спокойная и ласковая кошка, отлично ладит с детьми.",
-      "photo_url": "../../img_animals/пес1.jpg",
+      "photo_url": "https://th.bing.com/th/id/OIP.XgPjieyWNQucK1S_qHlgkQHaEo?rs=1&pid=ImgDetMain",
       "adopted": true,
       "date_added": "2024-09-15T09:30:00Z"
     },
