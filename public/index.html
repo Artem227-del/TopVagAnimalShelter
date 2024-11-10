@@ -9,18 +9,18 @@
   <body>
     <div class="header">
       <div class="navigation">
-        <a href="">О НАС</a>
-        <a href=""><b>ПИТОМЦЫ</b></a>
-        <a href="">КОНТАКТЫ</a>
+        <a href="#about-us">О НАС</a>
+        <a href="#main"><b>ПИТОМЦЫ</b></a>
+        <a href="#contacts">КОНТАКТЫ</a>
       </div>
       <div class="header-main">
         <h1>Счастье ближе, чем <br />вы думаете</h1>
-        <button>Выбрать друга</button>
+        <a href="#main"><button>Выбрать друга</button></a>
       </div>
     </div>
-    <div class="main">
+    <div id="main" class="main">
       <div class="welcome-image">
-        <img src="img/Питомцы.png" alt="" width="800" />
+        <img src="./img/Питомцы.png" alt="" width="800" />
       </div>
       <div class="animal-cards"></div>
       <div class="pagination">
@@ -29,9 +29,9 @@
         <button id="next">Вперед</button>
       </div>
     </div>
-    <div class="about-us">
+    <div id="about-us" class="about-us">
       <div class="welcome-image">
-        <img src="./public/img/О нас.png" alt="" width="800" />
+        <img src="./img/О нас.png" alt="" width="800" />
       </div>
       <div class="Description1">
         <img src="img/О нас 1.png" alt="" width="400" height="400" />
@@ -66,7 +66,37 @@
         </div>
       </div>
     </div>
+    <div id="contacts" class="contacts">
+      <div class="welcome-image">
+        <img src="img/Контакты.png" alt="" width="800" />
+      </div>
+      <div class="contacts-flexbox">
+        <form class="feedback-form" action="" method="GET">
+          <div class="number-form">
+            <p>Введите совместной номер телефона</p>
+            <input type="text" placeholder="Номер телефона" />
+          </div>
+          <div class="email-form">
+            <p>Ведите адрес электронной почты чтобы получать новости</p>
+            <input type="text" placeholder="Email" />
+          </div>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+        <div class="data">
+          <div class="donation">
+            <img src="img/image-donation.png" alt="" height="80" />
+            <p>5375 4141 2092 5051</p>
+          </div>
+          <div class="number">
+            <img src="img/image-24.png" alt="" height="80" />
+            <p>+7 (903) 949-96-80</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="admin.html">Admin Panel</a>
+    </div>
     <script src="../js/index.js"></script>
   </body>
-<footer><a href="admin.html">Admin Panel</a></footer>
 </html>
