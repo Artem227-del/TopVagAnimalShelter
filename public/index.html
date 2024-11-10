@@ -19,8 +19,29 @@
       </div>
     </div>
     <div id="main" class="main">
-      <div class="welcome-image">
-        <img src="./img/Питомцы.png" alt="" width="800" />
+      <div class="search-container">
+        <input type="text" id="search-name" placeholder="Поиск по имени" class="search-input">
+        <div class="filters">
+          <select id="breed-filter" class="filter-select">
+            <option value="">Выбор породы</option>
+            <!-- Будут добавлены породы через JavaScript -->
+          </select>
+          <select id="species-filter" class="filter-select">
+            <option value="">Собака/Кошка</option>
+            <option value="Собака">Собака</option>
+            <option value="Кошка">Кошка</option>
+          </select>
+          <select id="gender-filter" class="filter-select">
+            <option value="">Пол</option>
+            <option value="boy">Мальчик</option>
+            <option value="girl">Девочка</option>
+          </select>
+          <select id="age-sort" class="filter-select">
+            <option value="">Сортировка по возрасту</option>
+            <option value="asc">По возрастанию</option>
+            <option value="desc">По убыванию</option>
+          </select>
+        </div>
       </div>
       <div class="animal-cards"></div>
       <div class="pagination">
