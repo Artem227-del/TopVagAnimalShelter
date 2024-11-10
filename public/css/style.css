@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 .header {
-  background-image: url("../img/Собака Главный экран.png"), url("../img/Ellipse Главный экран.png"),
-    url("../img/Ellipse Шапка.png");
+  background-image: url("../img/Собака Главный экран.png"),
+    url("../img/Ellipse Главный экран.png"), url("../img/Ellipse Шапка.png");
   height: 725px;
   background-repeat: no-repeat;
   background-size: 580px, 690px, 410px;
@@ -57,7 +57,8 @@ a {
 
 .main {
   background-image: url("../img/Фон питомцы.png");
-  height: 1700px;
+  height: 1525px;
+  border-top: 5px solid #f2968f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -69,8 +70,9 @@ a {
 }
 
 .animal-cards {
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-top: 60px;
+  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   flex-wrap: wrap; /* Позволяет карточкам оборачивать в следующую строку */
   justify-content: space-between; /* Равномерно распределяет карточки по ширине */
@@ -79,7 +81,6 @@ a {
 .animal-card {
   border: 1px solid #ccc;
   border-radius: 12px; /* Закругленные углы */
-  padding: 20px;
   margin: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для глубины */
   text-align: center;
@@ -97,24 +98,33 @@ a {
 
 .animal-info {
   text-align: left; /* Выравнивание текста влево */
-  margin-top: 10px; /* Отступ сверху */
+  margin-top: 7px; /* Отступ сверху */
+  margin-left: 10px;
 }
 
-.animal-info h2 {
+.animal-info-flexbox h2 {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   color: #333;
   margin: 0; /* Убираем отступы */
 }
 
+.animal-info-flexbox {
+  display: flex;
+  align-items: center;
+}
+
 .animal-info .breed {
   color: #777; /* Цвет для породы */
-  margin: 5px 0; /* Отступ сверху и снизу */
+  margin: 0;
+  margin-bottom: 13px; /* Отступ сверху и снизу */
 }
 
 .animal-info .age {
   color: #555; /* Цвет для возраста */
-  margin: 5px 0; /* Отступ сверху и снизу */
+  margin: 0; /* Отступ сверху и снизу */
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 /* Эффект при наведении */
@@ -144,6 +154,8 @@ a {
 .about-us {
   background-image: url("../img/Фон о нас.png");
   height: 1700px;
+  border-top: 5px solid #f2968f;
+  border-bottom: 5px solid #f2968f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -245,4 +257,108 @@ a {
 .text-description3 h3 {
   font-size: 38px;
   margin: 0;
+}
+
+.contacts {
+  background-image: url("../img/Ellipse Главный экран.png"),
+    url("../img/круг-подвал.jpg");
+  height: 725px;
+  background-repeat: no-repeat;
+  background-size: 300px, 590px;
+  background-position: top 20px right 250px, bottom 0px left -270px;
+}
+
+.feedback-form {
+  margin-left: 250px;
+  margin-top: 70px;
+}
+.number-form input {
+  border: 3px solid #f2968f;
+  border-radius: 6px;
+  width: 440px;
+  height: 55px;
+}
+
+.number-form p {
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 59, 64);
+  font-size: 14.5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.email-form input {
+  border: 3px solid #f2968f;
+  border-radius: 6px;
+  width: 440px;
+  height: 55px;
+}
+
+.email-form p {
+  font-family: "Rubik", sans-serif;
+  color: rgb(40, 59, 64);
+  font-weight: 500;
+  font-size: 14.5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.feedback-form button {
+  font-family: "Rubik", sans-serif;
+  margin-top: 30px;
+  background-color: #f2968f;
+  border-color: #f2968f;
+  width: 210px;
+  height: 55px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contacts-flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.data {
+  margin-top: 29px;
+  margin-left: 150px;
+}
+
+.donation {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.donation p {
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #283b40;
+}
+
+.number p {
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #283b40;
+}
+
+.footer {
+  margin-top: 40px;
+  height: 100px;
+  background-color: #bf5e57;
 }
