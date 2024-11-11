@@ -92,14 +92,14 @@
         <img src="img/Контакты.png" alt="" width="800" />
       </div>
       <div class="contacts-flexbox">
-        <form class="feedback-form" action="" method="GET">
+        <form id="contact-form" class="feedback-form" method="POST">
           <div class="number-form">
             <p>Введите совместной номер телефона</p>
-            <input type="text" placeholder="Номер телефона" />
+            <input type="text" id="phone" placeholder="Номер телефона" required />
           </div>
           <div class="email-form">
             <p>Ведите адрес электронной почты чтобы получать новости</p>
-            <input type="text" placeholder="Email" />
+            <input type="email" id="email" placeholder="Email" required />
           </div>
           <button type="submit">ОТПРАВИТЬ</button>
         </form>

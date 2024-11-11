@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const cors = require("cors");  // Добавляем CORS
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -8,10 +9,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
+// Обработчик для главной страницы
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+// Обработчик для получения списка животных
 app.get("/api/animals", (req, res) => {
   fs.readFile(
     path.join(__dirname, "public", "db", "db.json"),
@@ -23,6 +26,7 @@ app.get("/api/animals", (req, res) => {
   );
 });
 
+// Обработчик для добавления новых животных
 app.post("/api/animals", (req, res) => {
   const newAnimal = { id: Date.now(), ...req.body };
   fs.readFile(
@@ -44,6 +48,7 @@ app.post("/api/animals", (req, res) => {
   );
 });
 
+// Обработчик для удаления животного
 app.delete("/api/animals/:id", (req, res) => {
   const { id } = req.params;
   fs.readFile(
@@ -65,6 +70,7 @@ app.delete("/api/animals/:id", (req, res) => {
   );
 });
 
+// Обработчик для обновления животного
 app.put("/api/animals/:id", (req, res) => {
   const { id } = req.params;
   fs.readFile(
@@ -89,6 +95,31 @@ app.put("/api/animals/:id", (req, res) => {
       }
     }
   );
+});
+
+// Обработчик для получения списка контактов
+app.get("/api/contacts", (req, res) => {
+  fs.readFile(path.join(__dirname, "public", "db", "dbcontact.json"), "utf8", (err, data) => {
+    if (err) return res.status(500).send(err);
+    res.json(JSON.parse(data).contacts);
+  });
+});
+
+// Обработчик для добавления нового контакта
+app.post("/api/contacts", (req, res) => {
+  const newContact = { id: Date.now(), ...req.body };
+
+  fs.readFile(path.join(__dirname, "public", "db", "dbcontact.json"), "utf8", (err, data) => {
+    if (err) return res.status(500).send(err);
+
+    const db = JSON.parse(data);
+    db.contacts.push(newContact);
+
+    fs.writeFile(path.join(__dirname, "public", "db", "dbcontact.json"), JSON.stringify(db, null, 2), (err) => {
+      if (err) return res.status(500).send(err);
+      res.status(201).json(newContact);
+    });
+  });
 });
 
 app.listen(PORT, () => {

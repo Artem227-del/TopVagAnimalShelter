@@ -133,6 +133,48 @@ document.getElementById("species-filter").addEventListener("change", applyFilter
 document.getElementById("gender-filter").addEventListener("change", applyFilters);
 document.getElementById("age-sort").addEventListener("change", applyFilters);
 
+// Получаем форму и элементы ввода
+const contactForm = document.getElementById('contact-form');
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById('email');
+
+// Обработчик отправки формы
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault(); // Предотвращаем перезагрузку страницы
+
+  // Получаем значения из полей
+  const phone = phoneInput.value;
+  const email = emailInput.value;
+
+  // Формируем объект с данными
+  const contactData = {
+    phone,
+    email
+  };
+
+  try {
+    // Отправляем данные на сервер
+    const response = await fetch('/api/contacts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(contactData)
+    });
+
+    if (response.ok) {
+      alert('Данные успешно отправлены!');
+      phoneInput.value = '';
+      emailInput.value = '';
+    } else {
+      alert('Ошибка при отправке данных.');
+    }
+  } catch (error) {
+    console.error('Ошибка:', error);
+    alert('Ошибка при отправке данных.');
+  }
+});
+
 // Основная функция
 async function main() {
   await fetchAnimals();
