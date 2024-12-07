@@ -26,6 +26,25 @@ app.get("/api/animals", (req, res) => {
   );
 });
 
+// Обработчик для получения конкретного животного по ID
+app.get("/api/animals/:id", (req, res) => {
+  const { id } = req.params;
+  fs.readFile(
+    path.join(__dirname, "public", "db", "db.json"),
+    "utf8",
+    (err, data) => {
+      if (err) return res.status(500).send(err);
+      const db = JSON.parse(data);
+      const animal = db.goods.find((animal) => animal.id == id);
+      if (animal) {
+        res.json(animal);
+      } else {
+        res.status(404).send("Animal not found");
+      }
+    }
+  );
+});
+
 // Обработчик для добавления новых животных
 app.post("/api/animals", (req, res) => {
   const newAnimal = { id: Date.now(), ...req.body };

@@ -16,9 +16,44 @@
         <input type="text" id="gender" placeholder="Пол" required>
         <textarea id="description" placeholder="Описание"></textarea>
         <input type="text" id="photo_url" placeholder="URL фотографии" required>
+
+        <!-- Новый элемент выбора типа животного -->
+        <label for="type">Тип животного:</label>
+        <select id="type" required>
+            <option value="Собака">Собака</option>
+            <option value="Кошка">Кошка</option>
+        </select>
+
         <button type="submit">Добавить</button>
     </form>
+
     <div id="animal-list"></div>
+
+    <!-- Модальное окно для редактирования животного -->
+    <div id="edit-animal-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Редактировать животное</h2>
+            <form id="edit-animal-form">
+                <input type="text" id="edit-name" placeholder="Имя" required>
+                <input type="text" id="edit-breed" placeholder="Порода" required>
+                <input type="text" id="edit-age" placeholder="Возраст" required>
+                <input type="text" id="edit-gender" placeholder="Пол" required>
+                <textarea id="edit-description" placeholder="Описание"></textarea>
+                <input type="text" id="edit-photo_url" placeholder="URL фотографии" required>
+
+                <!-- Новый элемент выбора типа животного для редактирования -->
+                <label for="edit-type">Тип животного:</label>
+                <select id="edit-type" required>
+                    <option value="Собака">Собака</option>
+                    <option value="Кошка">Кошка</option>
+                </select>
+
+                <button type="submit">Сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+
     <script src="../js/admin.js"></script>
 </body>
 </html>
